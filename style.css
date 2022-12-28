@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titulo_logo h1 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 30px;
+    color: #000000c2;
+}
+
+#container {
+    display: grid;
+    grid-columns: 1fr 1fr;
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 10vh;
+    border-bottom: 2px solid #000000;
+}
+
+.navbar_menu li{
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+
+a {
+    color: #000000c2;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
