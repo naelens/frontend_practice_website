@@ -12,12 +12,6 @@
     color: #000000c2;
 }
 
-#container {
-    display: grid;
-    grid-columns: 1fr 1fr;
-
-}
-
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -38,5 +32,68 @@ a {
     color: #000000c2;
     font-size: 18px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+.conteudo_principal {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    height: 90vh;
+    background-color:#FAEBD7;
+}
+
+.conteudo_texto h2{
+    font-family: 'DM Serif Text', serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    width: 500px;
+}
+
+.conteudo_texto p {
+    width: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #000000c2;
+}
+
+
+.conteudo_imagem img {
+    width: 600px;
+    margin-top: 20px;
+}
+
+.botoes_LM, .botoes_VP {
+    margin-top: 30px;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border: 2px solid #000000c2;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.botoes_VP {
+    background-color: #ffffff;
+}
+
+.botoes_LM {
+    background-color: #FAEBD7;
+}
+
+.botoes_LM:hover, .botoes_VP:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+
+
+
