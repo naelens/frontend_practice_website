@@ -10,6 +10,7 @@
     font-family: 'DM Serif Text', serif;
     font-size: 30px;
     color: #000000c2;
+    margin-left: 100px;
 }
 
 .cabecalho {
@@ -17,9 +18,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
-    height: 10vh;
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
     border-bottom: 2px solid #000000;
+    position: fixed;
+}
+
+nav {
+    margin-right: 100px;
 }
 
 .navbar_menu li{
@@ -44,8 +51,9 @@ a:hover {
     justify-content: center;
     gap: 50px;
     align-items: center;
-    height: 90vh;
+    height: 120vh;
     background-color:#FAEBD7;
+    border-bottom: 2px solid #000000;
 }
 
 .conteudo_texto h2{
@@ -61,7 +69,7 @@ a:hover {
     font-size: 20px;
     margin-top: 20px;
     font-weight: 500;
-    color: #000000c2;
+    color: #000000;
 }
 
 
@@ -70,12 +78,12 @@ a:hover {
     margin-top: 20px;
 }
 
-.botoes_LM, .botoes_VP {
+.botoes_LM, .botoes_VP, .botoes_IF {
     margin-top: 30px;
     width: 130px;
     height: 50px;
     border: none;
-    border: 2px solid #000000c2;
+    border: 2px solid #000000a6;
     font-size: 16px;
     font-weight: 700;
 }
@@ -88,12 +96,87 @@ a:hover {
     background-color: #FAEBD7;
 }
 
-.botoes_LM:hover, .botoes_VP:hover {
+.botoes_LM:hover, .botoes_VP:hover, .botoes_IF:hover {
     background-color: #000000;
     color: #ffffff;
     cursor: pointer;
     transition: 0.2s all linear;
 }
 
+.conteudo_informativo {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 150px 150px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.conteudo_informativo_itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+}
+
+.titulo_conteudo_secundario h2 {
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+    font-size: 40px;
+    margin-top: 50px;
+    line-height: 45px;
+}
+
+.conteudo_informativo_itens img {
+    width: 100px;
+    margin-right: 30px;
+}
+
+.conteudo_informativo_itens p {
+    font-size: 18px;
+    color: #000000;
+}
+
+.conteudo_informativo_itens_final {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.conteudo_informativo_itens_final h2{
+    font-family: 'DM Serif Text', serif;
+    font-size: 28px;
+}
+
+.botoes_IF {
+    background-color: #ffffff;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 150px;
+    color: #ffffff;
+    margin-top: 80px;
+}
+
+.rodape ul{
+    display: flex;
+    gap: 30px;
+}
+
+.rodape li {
+    list-style: none;
+}
+
+.rodape a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+span {
+    margin-bottom: 20px;
+}
 
 
